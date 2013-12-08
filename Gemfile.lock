@@ -9,7 +9,6 @@ GEM
     dependor (1.0.1)
     diff-lcs (1.2.5)
     i18n (0.6.9)
-    minitest-firemock (0.0.2)
     multi_json (1.8.2)
     quacky (0.2.8)
       activesupport (~> 3.2.5)
@@ -30,7 +29,6 @@ PLATFORMS
 
 DEPENDENCIES
   bogus
-  minitest-firemock
   quacky
   rake
   rspec
