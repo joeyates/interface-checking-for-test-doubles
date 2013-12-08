@@ -20,4 +20,11 @@ namespace :quacky do
   end
 end
 
+namespace :rspec_fire do
+  desc 'Run rspec-fire specs'
+  RSpec::Core::RakeTask.new(:'spec') do |t|
+    t.pattern = 'spec/rspec_fire/**/*_spec.rb'
+  end
+end
+
 task default: [:spec]
