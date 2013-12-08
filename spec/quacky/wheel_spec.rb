@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'quacky_spec_helper'
 
-describe Wheel::Version1 do
+describe Wheel::Version1, ' - quacky' do
   subject { described_class.new(26, 1.5) }
 
   it { should quack_like(Diameterable) }
@@ -8,7 +8,7 @@ describe Wheel::Version1 do
   its(:diameter) { should be_within(0.1).of(29) }
 end
 
-describe Wheel::Version2 do
+describe Wheel::Version2, ' - quacky' do
   subject { described_class.new(26, 1.5) }
 
   it { should quack_like(Circumferanceable) }

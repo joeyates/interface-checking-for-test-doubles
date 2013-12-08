@@ -1,6 +1,6 @@
-require 'spec_helper'
+require 'quacky_spec_helper'
 
-describe Gear, 'with Wheel::Version1' do
+describe Gear, 'with Wheel::Version1 - quacky' do
   let(:wheel) { Quacky.double(:wheel, Diameterable) }
 
   before do
@@ -12,7 +12,7 @@ describe Gear, 'with Wheel::Version1' do
   its(:gear_inches) { should be_within(0.01).of(116) }
 end
 
-describe Gear, 'with Wheel::Version2' do
+describe Gear, 'with Wheel::Version2 - quacky' do
   let(:wheel) { Quacky.double(:wheel, Circumferanceable) }
 
   before do
